@@ -162,12 +162,13 @@ Now press (Ctrl-X) to exit
 ### STEP 15 install ERPNext latest version in bench & site
 
     
-    bench get-app payments
+    #bench get-app payments
     
     bench get-app erpnext --branch version-14
     ###OR
     bench get-app https://github.com/frappe/erpnext --branch version-14
 
+    bench get-app payments --branch version-14
     bench --site dcode.com install-app erpnext
     
     bench start
