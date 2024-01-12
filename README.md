@@ -137,8 +137,10 @@ Now press (Ctrl-X) to exit
 
 ### STEP 11 install wkhtmltopdf
 
-    sudo apt-get install xvfb libfontconfig wkhtmltopdf
-    
+    sudo apt-get install xvfb libfontconfig
+    wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.3/wkhtmltox-0.12.3_linux-generic-amd64.tar.xz
+    tar vxf wkhtmltox-0.12.3_linux-generic-amd64.tar.xz
+    sudo cp wkhtmltox/bin/wk* /usr/bin/
 
 ### STEP 12 install frappe-bench
 
