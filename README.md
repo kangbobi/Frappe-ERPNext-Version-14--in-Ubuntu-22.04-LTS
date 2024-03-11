@@ -156,8 +156,11 @@ Now press (Ctrl-X) to exit
     bench start
     
 ### STEP 14 create a site in frappe bench 
-    
+    #local mariadb server
     bench new-site dcode.com
+    
+    # OR define mariadb server
+    bench new-site site.com --db-host 192.168.1.xx --mariadb-root-username root --db-name db_name  --no-mariadb-socket  --force
     
     bench use dcode.com
 
