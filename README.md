@@ -137,6 +137,7 @@ Now press (Ctrl-X) to exit
 
 ### STEP 11 install wkhtmltopdf
 
+    #wkhtml patch
     sudo apt-get install xvfb libfontconfig
     wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.3/wkhtmltox-0.12.3_linux-generic-amd64.tar.xz
     tar vxf wkhtmltox-0.12.3_linux-generic-amd64.tar.xz
@@ -160,7 +161,7 @@ Now press (Ctrl-X) to exit
     bench new-site dcode.com
     
     # OR define mariadb server
-    bench new-site site.com --db-host 192.168.1.xx --mariadb-root-username root --db-name db_name  --no-mariadb-socket  --force
+    bench new-site dcode.com --db-host 192.168.1.xx --mariadb-root-username root --db-name db_name  --no-mariadb-socket  --force
     
     bench use dcode.com
 
@@ -172,9 +173,14 @@ Now press (Ctrl-X) to exit
     bench get-app erpnext --branch version-14
     ###OR
     bench get-app https://github.com/frappe/erpnext --branch version-14
+    
 
     bench get-app payments --branch version-14
+    bench get-app hrms --branch version-14 
+
     bench --site dcode.com install-app erpnext
+    bench --site dcode.com install-app payments
+    bench --site dcode.com install-app hrms
     
     bench start
     
