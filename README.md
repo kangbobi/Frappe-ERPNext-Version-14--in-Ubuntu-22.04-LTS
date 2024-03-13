@@ -145,7 +145,7 @@ Now press (Ctrl-X) to exit
 
 ### STEP 12 install frappe-bench
 
-    sudo -H pip3 install frappe-bench==5.10.1
+    sudo -H pip3 install frappe-bench==5.22.3
     
     bench --version
     
