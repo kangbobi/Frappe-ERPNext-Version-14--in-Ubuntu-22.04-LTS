@@ -6,7 +6,7 @@ A complete Guide to Install Frappe/ERPNext version 14  in Ubuntu 22.04 LTS
 ### Pre-requisites 
 
       Python 3.6+
-      Node.js 14+
+      Node.js 16+
       Redis 5                                       (caching and real time updates)
       MariaDB 10.3.x / Postgres 9.5.x               (to run database driven apps)
       yarn 1.12+                                    (js dependency manager)
