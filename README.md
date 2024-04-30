@@ -138,10 +138,11 @@ Now press (Ctrl-X) to exit
 ### STEP 11 install wkhtmltopdf
 
     #wkhtml patch
-    sudo apt-get install xvfb libfontconfig
-    wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.3/wkhtmltox-0.12.3_linux-generic-amd64.tar.xz
-    tar vxf wkhtmltox-0.12.3_linux-generic-amd64.tar.xz
-    sudo cp wkhtmltox/bin/wk* /usr/bin/
+    sudo apt-get install xvfb libfontconfig libfontenc1 xfonts-75dpi xfonts-base xfonts-encodings xfonts-utils openssl build-essential libssl-dev libxrender-dev git-core libx11-dev libxext-dev libfontconfig1-dev libfreetype6-dev fontconfig -y
+    wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2_amd64.deb
+    sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2_amd64.deb
+    wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.bionic_amd64.deb
+    sudo dpkg -i wkhtmltox_0.12.6-1.bionic_amd64.deb
 
 ### STEP 12 install frappe-bench
 
